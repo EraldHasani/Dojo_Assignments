@@ -1,0 +1,61 @@
+.d-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav{
+    align-items: center;
+    background-color: grey;
+    width: 50%;
+    margin: 10px 300px;
+}
+.button{
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+}
+.main{
+    width: 50%;
+    margin-left: 300px;
+}
+
+.box1{
+    border: 2px solid black;
+    width: 50%;
+    margin: 10px 0;
+    text-align: center;
+    padding: 5px;
+    
+}
+.ninjas{
+    width: 40%;
+}
+.btn{
+    background-color: yellow;
+    margin: 10px;
+    border: 2px solid black;
+}
+.dojonary{
+    border: 2px solid black ;
+    width: 20%;
+}
+.definition{
+    border: 2px solid black;
+    margin-left: 135px;
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif
+}
+.definition button {
+    align-items: center;
+    background-color: rgb(37, 216, 37);
+    padding: 10px 20px;
+    border: 3px solid black;
+    
+}
+.secondbox{
+    border: 2px solid black;
+    width: 57%;
+    margin: 20px 0;
+
+}

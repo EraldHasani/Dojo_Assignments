@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+ /* MY CSS START HERE */
+ 
+ .container{
+    width: 100%;
+    background-color: rgba(234,234,234,255)
+	;
+	
+ }
+ .d-flex{
+    display: flex;
+ }
+
+ .justify-between{
+    justify-content: space-between;
+ }
+
+ .justify-evenly{
+    justify-content: space-evenly;
+ }
+
+ .white{
+    color: white;
+ }
+.text-center{
+ text-align: center;
+}
+.align-center{
+	align-items: center;
+}
+ .header{
+    width: 99%;
+    background-color: black;
+	border-radius: 4px;
+	margin: 0 10px;
+	padding: 5px 0;
+
+ }
+ .nav-left{
+	padding: 2px 35px;
+	background-color: rgba(31,26,23,255);
+ }
+  .simbol{
+	position: relative;
+	right: 12px;
+	top: 5px;
+ }
+ .navbar{
+	width: 50%;
+	padding-right: 80px;
+ }
+ .navbody{
+	color: white;
+	text-decoration: none;
+	justify-content: space-around;
+ }
+ .border{
+	border-right: 1px solid white;
+	border-radius: 2px;
+	padding-right: 50px ;
+ }
+ .computer{
+	width: 50%;
+	background-color:  rgb(234,234,234);
+	background: linear-gradient(90deg, rgba(234,234,234,1) 76%, rgba(250,250,250,1) 100%);;
+}
+ .computer h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xxx-large;
+	padding: 30px;
+ } 
+ .computer p{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: x-large;
+	padding: 20px 35px;
+	color: rgb(154, 152, 152);
+}
+ .btn{
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 10px;
+	float: right;
+	margin: 60px;
+ }
+ .image{
+	width: 50%;
+	padding: 20px;
+	background: rgb(234,234,234);
+	background: linear-gradient(271deg, rgba(234,234,234,1) 76%, rgba(250,250,250,1) 100%);
+}
+.secondmain{
+border-top: 3px solid rgba(215,215,215,255);
+border-radius: 3px;
+}
+
+
+.secondmain-body {
+	width: 85%;
+	margin: 20px;
+}
+.medium-border{
+	border-right: 2px solid rgba(214,214,214,255);
+	border-radius: 4px;
+	margin: 10px;
+}
+.secondmain-body h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	padding: 0 10px;
+	margin: 3px;
+}
+
+.secondmain-body p{
+	width: fit-content;
+	margin: 10px;
+	padding: 5px;
+}
+.icon1{
+	float: inline-start;
+	padding: 0 10px;
+}
+.welcome{
+	width:85%;
+}
+.welcome h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	padding: 0 20px;
+	margin: 20px;
+}
+.welcome p{
+	line-height: 25px;
+	padding: 10px;
+	margin: 20px;
+}
+.waste{
+	width: 55%;
+	height: auto;
+	background-color: white;
+	margin-top: 10px 	;
+}
+.waste-body{
+	padding: 10px;
+}
+.waste h1{
+	font-size: large;
+	padding: 10px 20px;
+	margin: 5px;
+	
+}
+.waste p{
+	font-family:sans-serif ;
+	color: rgb(145, 142, 142);
+	font: inherit;
+}
+.read-more{
+	color: rgb(145, 142, 142);
+	line-height: 50px;
+
+}
+.wasteimage{
+	width: 50%;
+	height: fit-content;
+	padding-top: 20px;
+}
+.about-us{
+	width: 97%;
+	background-color: black;
+	margin: 5px;
+	padding: 20px;
+	color: rgb(211, 211, 211);
+
+}
+.contact{
+ padding:10px 20px;
+ width: 20%;
+}
+.contact h1{
+	font-size: x-large;
+	padding: 10px;
+	margin: 10px;
+
+}
+.contact h2{
+	padding: 10px;
+	margin: 10px;
+}
+.support{
+	width: 30%;
+
+}
+.support h1{
+	font-size: x-large;
+	margin:20px;
+}
+.border-bottom{
+	border-bottom: 1px solid grey;
+	border-radius: 2px;
+	
+}
+.listsupport{
+	width: 33%;
+	text-decoration: none;
+	margin: 10px;
+	line-height: 30px;
+	color: rgb(211, 211, 211);
+}
+.touch{
+	width: 30%;
+}
+.touch h1{
+	font-size: x-large;
+	padding: 10px;
+	margin: 10px;
+}
+.touch h2{
+	padding: 10px;
+	margin: 10px;
+}
+.label{
+margin: 20px;
+
+}
+.name{
+	margin: 5px;
+	padding: 5px;
+	background-color: rgba(38,38,38,255);
+	border: none;
+
+}
+.email{
+	margin: 5px;
+	padding: 5px;
+	background-color: rgba(38,38,38,255);
+	border: none;
+}
+.phone{
+	width: 76%;
+	margin: 7px;
+	padding: 5px;
+	background-color: rgba(38,38,38,255);
+	border: none;
+}
+.button{
+	background-color: rgb(26, 26, 26);
+	border: none;
+	color: white;
+	padding: 8px 10px;
+
+}
+.footer p {
+    text-align: center;
+	color: rgb(146, 145, 145);
+	padding: 10px;
+}

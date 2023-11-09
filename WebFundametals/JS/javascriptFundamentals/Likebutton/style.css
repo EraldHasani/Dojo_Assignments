@@ -1,0 +1,21 @@
+#likeCount{
+    margin: 30px 0;
+    padding-left: 40px;
+    color: rgb(14, 14, 14);
+}
+#likeButton{
+    height: fit-content;
+    padding: 10px 20px;
+    margin: 20px 40px;
+    background-color: rgb(203, 203, 97);
+    border: 2px solid black;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box{
+    width: 30%;
+    border: 2px solid black;
+}

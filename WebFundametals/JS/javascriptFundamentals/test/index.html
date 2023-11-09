@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <button onclick="turnOff(this)">On</button>
+    <button onclick="turnOff(this)">On</button>
+
+    <div class="block shadow" onmouseover="addShadow(this)" onmouseout="removeShadow(this)"></div>
+    <div class="block shadow" onmouseover="over(this)" onmouseout="out(this)"></div>
+
+    <h1 id="title">Hello World</h1>
+
+    <h3>Lorem Ipsem</h3>
+
+    <button onclick="setActive(this)">Switch to dark mode</button>
+
+    <label>I would like to eat </label>
+<select onchange="chooseLunch(this)">
+    <option>Tacos</option>
+    <option>Pasta</option>
+    <option>Sushi</option>
+</select>
+
+<div class="card">
+    <p>Hello my name is:</p>
+    <h3 id="name-tag">Example</h3>
+</div>
+    
+<input type="text" value="Example" oninput="setName(this)">
+
+<p class="color">red</p>
+<p class="color">blue</p>
+<p class="color">maroon</p>
+<p class="color">midnightblue</p>
+    
+
+<button onclick="applyColors()">Apply Colors</button>
+<img src="ninja.jpg" alt="ninja" onmouseover="scale(this, 1.5)" onmouseleave="scale(this, 1)">
+
+
+    <script src="javas.js"></script>
+</body>
+</html>

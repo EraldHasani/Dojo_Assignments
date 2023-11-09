@@ -1,0 +1,15 @@
+.block {
+    height: 50px;
+    width: 200px;
+    background-color: silver;
+    border: 1px dotted black;
+    
+}
+
+.shadow{
+    box-shadow: 5px 5px 5px  #dedddd ;
+}
+
+img {
+    transition: 500ms;
+}

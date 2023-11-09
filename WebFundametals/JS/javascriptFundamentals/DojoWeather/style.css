@@ -1,0 +1,21 @@
+.d-flex{
+    display: flex;
+}
+
+
+.nav{
+    background-color: rgb(75, 122, 241);
+    padding: 20px;
+    justify-content: space-around;
+}
+.nav-list{
+    color: white;
+    text-decoration: none;
+    margin: 40px;
+    font-size: x-large;
+}
+ .city{
+    justify-content: space-around;
+    width: 70%;
+  
+ }
