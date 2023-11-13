@@ -12,11 +12,9 @@
 
     <header>
         <nav class="nav d-flex">
-            <div>
-                <a class="nav-list" href="#">DojoWeather</a>
-            </div>
-            <div>
-                <a class="nav-list" href="#">Burbank</a>
+            <h1 class="nav-list1">DojoWeather</h1>
+            <div class="nav-list">
+                <a  class="nav-list" href="#" onclick="myalert()">Burbank</a>
                 <a class="nav-list" href="#">Chicago</a>
                 <a class="nav-list" href="#">Dallas</a>
             </div>
@@ -25,24 +23,59 @@
 
     <div class="city d-flex">
         <h1>San Jose</h1>
-        <div>
+        <div class="temp">
             <label>Show temperature in :</label>
             <select name="temperature" id="">
                 <option value="C">&#8451; </option>
-                <option value="F">F</option>
+                <option value="F" id="convertButton">&#8457;</option>
             </select>
         </div>
     </div>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+    <div class="week d-flex">
+        <div class="weekDay">
+            <h1>Today</h1>
+            <img src="./photo/some_rain.png" alt="" class="photo">
+            <p>some rain</p>
+            <h2  id="celsiusTomorrow">24°</h2> 
+            <h3  id="celsiusMinTomorrow">18°</h3>
+        </div>
+        <div class="weekDay">
+            <h1>Tomorrow</h1>
+            <img src="./photo/some_sun.png" alt=""  class="photo">
+            <p>some sun</p>
+            <h2 id="celsiusTomorrow">27°</h2> 
+            <h3 id="celsiusMinTomorrow">19°</h3>
+
+        </div>
+        <div class="weekDay">
+            <h1>Friday</h1>
+            <img src="./photo/some_clouds.png" alt=""  class="photo">
+            <p>some clouds</p>
+            <h2 id="celsiusTomorrow">21°</h2> 
+            <h3 id="celsiusMinTomorrow">16°</h3>
+        </div>
+        <div class="weekDay">
+
+            <h1>Saturday</h1>
+            <img src="./photo/some_sun.png" alt=""  class="photo">
+            <p>some sun</p>
+            <h2 id="celsiusTomorrow">26°</h2> 
+            <h3 id="celsiusMinTomorrow">21°</h3>
+        </div>
     </div>
 
-    <div>
-        <p></p>
-    </div>
+    <footer class="footer d-flex">
+        <img src="./photo/cookie.png" alt="" width="70px" height="70px">
+        <div class="text">
+            <h1> Stop! Cookie time</h1>
+            <p>We use cookies(sadly not the edible ones) to personalize content and adds to provide social media features and to analyse our traffic. 
+                <span><a href="#">Read more... </a></span></p>
+        </div>
+        <button id="btn" onclick="removeMessage('footer')"> I Accept </button>
+
+      
+    </footer>
 
 
 

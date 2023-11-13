@@ -45,7 +45,11 @@ body {
     color: #fff;
     font-weight: bold;
 }
-
+#button{
+    background-color: white;
+    text-decoration: none;
+    border: none;
+}
 .btn {
     height: 30px;
     width: 100px;
