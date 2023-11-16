@@ -25,7 +25,7 @@
         <h1>San Jose</h1>
         <div class="temp">
             <label>Show temperature in :</label>
-            <select name="temperature" id="">
+            <select onchange="changeTemp(this)" name="temperature" id="tempUnit">
                 <option value="C">&#8451; </option>
                 <option value="F" id="convertButton">&#8457;</option>
             </select>
@@ -37,31 +37,31 @@
             <h1>Today</h1>
             <img src="./photo/some_rain.png" alt="" class="photo">
             <p>some rain</p>
-            <h2  id="celsiusTomorrow">24°</h2> 
-            <h3  id="celsiusMinTomorrow">18°</h3>
+            <h2 class="temperature">24°</h2> 
+            <h3  class="temperature">18°</h3>
         </div>
         <div class="weekDay">
             <h1>Tomorrow</h1>
             <img src="./photo/some_sun.png" alt=""  class="photo">
             <p>some sun</p>
-            <h2 id="celsiusTomorrow">27°</h2> 
-            <h3 id="celsiusMinTomorrow">19°</h3>
+            <h2 class="temperature">27°</h2> 
+            <h3 class="temperature">19°</h3>
 
         </div>
         <div class="weekDay">
             <h1>Friday</h1>
             <img src="./photo/some_clouds.png" alt=""  class="photo">
             <p>some clouds</p>
-            <h2 id="celsiusTomorrow">21°</h2> 
-            <h3 id="celsiusMinTomorrow">16°</h3>
+            <h2 class="temperature">21°</h2> 
+            <h3 class="temperature">16°</h3>
         </div>
         <div class="weekDay">
 
             <h1>Saturday</h1>
             <img src="./photo/some_sun.png" alt=""  class="photo">
             <p>some sun</p>
-            <h2 id="celsiusTomorrow">26°</h2> 
-            <h3 id="celsiusMinTomorrow">21°</h3>
+            <h2 class="temperature">26°</h2> 
+            <h3 class="temperature">21°</h3>
         </div>
     </div>
 
