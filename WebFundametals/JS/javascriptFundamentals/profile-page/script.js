@@ -11,14 +11,18 @@ function removeProfile(idja) {
 
   
    const button = document.getElementById("btnn");
-   button.addEventListener ("click", updateName() );
+   button.addEventListener ("click", updateName('profileName') );
    let nameProfile = document.getElementById('profileName')
 
    function updateName() {
     let name = prompt("Enter a new name");
-    if (name !== null) {
+    if (name !== null && name !== '') {
     profileName.innerText = ` ${name}`;
-  }
+    }
+    else {
+      profileName.innerText= 'Jane Doe';
+    }
+  
    }
 
  
