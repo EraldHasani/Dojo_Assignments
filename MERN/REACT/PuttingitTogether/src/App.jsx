@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       
-    <Age firstName={"Doe,"}  lastName={"Jane"} hairColor={"Black"} initialAge={45}  />
-    <Age firstName={"Smith,"}  lastName={"John"} hairColor={"Brown"}  initialAge={88} />
+    <Age firstName={"Doe"}  lastName={"Jane"} hairColor={"Black"} initialAge={45}  />
+    <Age firstName={"Smith"}  lastName={"John"} hairColor={"Brown"}  initialAge={88} />
  </>
   );
 }
