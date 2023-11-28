@@ -26,7 +26,7 @@ const UserForm = (props) => {
     };
     
     return(
-        <form className='' onSubmit={ createUser }>
+        <form>
             <div className='data d-flex'>
                 <label  ClassName=''>FirstName: </label> 
                 <input type="text" onChange={ (e) => setFirstName(e.target.value) } />
