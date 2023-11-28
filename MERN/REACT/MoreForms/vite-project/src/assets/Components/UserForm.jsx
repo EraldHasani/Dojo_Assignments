@@ -23,7 +23,7 @@ const UserForm = (props) => {
             </div>
 
             {   firstName.length > 0 && firstName.length<3 ?
-                   <p>First Name must be at least 2 characters </p> :   null
+                   <span>First Name must be at least 2 characters </span> :   null
             }
 
             <div className="data">
@@ -60,12 +60,15 @@ const UserForm = (props) => {
             <div className="data">
                 <label > Confirm Password:</label>
                 <input type="password" onChange={(e)=>setConfPassword(e.target.value)} placeholder="Search..."/>
-            </div>
-            <button type="submit">Submit</button>
-            {    password === confpassword ?
+            
+                {    password === confpassword ?
                 null :  <span>Password must match </span> 
 
             }
+            
+            </div>
+            
+            <button type="submit">Submit</button>
 
 
 
