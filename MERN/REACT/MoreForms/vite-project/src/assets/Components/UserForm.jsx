@@ -40,9 +40,6 @@ const UserForm = (props) => {
                 <input type="text" onChange={(e)=>setEmail(e.target.value)} placeholder="Search..." />
             </div>
 
-            {   email.length>0 && email.length<3 ?
-            <span>Email must be at least 2 characters </span> : null
-            }
 
             <div className="data">
                 <label > Password:</label>

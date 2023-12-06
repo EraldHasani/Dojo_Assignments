@@ -1,0 +1,9 @@
+*{
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+}
+
+.completed{
+  text-decoration: line-through;
+}

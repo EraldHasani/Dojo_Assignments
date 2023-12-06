@@ -1,0 +1,28 @@
+*{
+  margin: auto;
+}
+.App{
+  border: 2px solid black;
+  padding: 2px;
+  border-bottom: none;
+  
+}
+
+
+.tab-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.tab-list button{
+  border: 1px solid black;
+  margin: 5px 10px;
+}
+.Content{
+text-align: center;
+ border: 2px solid black;
+  border-top: none ;
+  padding: auto;
+  height: 50px;
+
+}
