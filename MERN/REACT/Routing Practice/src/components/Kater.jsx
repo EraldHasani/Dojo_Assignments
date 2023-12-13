@@ -1,35 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 
 const Kater = (props) => {
+
+    const { word, color, backgroundColor } = useParams();
+
+
     return (
         <div>
-            <h1> The number is :4</h1>
-            <Link to={"/home"} style={{
-
-                borderradius: "8px",
-                border: " 1px solid transparent",
-                margin: "10px",
-                padding: "0.6em 1.2em",
-                fontSize: "1em",
-                backgroundColor: "#ababab",
-                transition: "border-color 0.25s",
-
-            }} >   Go to previous page </Link>
+            { isNaN(word) ?
 
 
-            <Link to={"/hello"} style={{
 
-                borderradius: "8px",
-                border: " 1px solid transparent",
-                margin: "10px",
-                padding: "0.6em 1.2em",
-                fontSize: "1em",
-                backgroundColor: "#ababab",
-                transition: "border-color 0.25s",
+                    <h1 style={
+                        color?
+                        {color:color , backgroundColor:backgroundColor} : null 
+                    }>  This is a  {word}</h1> :
 
-            }}> Go to Hello</Link>
+
+                    <h1> The number is: {word} </h1>
+
+            }
+
+
         </div>
     )
 }
