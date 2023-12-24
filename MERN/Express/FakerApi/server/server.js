@@ -24,6 +24,8 @@ const createUser = () => {
     }
     return newUser;
 }
+    
+
 
 const newFakeUSer = createUser();
 console.log(newFakeUSer);
@@ -67,7 +69,7 @@ app.get('/api/users/new', (req, res) => {
     const newFakeUSer= createUser();
     
     const data={
-        user:newFakeUser,
+        user:newFakeUSer,
         company:newFakeCompany,
     };
     res.json(data);
