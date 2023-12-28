@@ -1,0 +1,101 @@
+import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
+
+import axios from 'axios'
+import '../App.css'
+const Product = (props) => {
+
+    const navigate = useNavigate()
+    const [title, setTitle] = useState("");
+    const [description, setDescription] = useState("");
+    const [price, setPrice] = useState(0);
+    const [errorMessage, setErrorMessage] = useState("");
+    const navigateBack = () => {
+        navigate('/products')
+    }
+
+    const CreateProduct = (e) => {
+
+        //prevent default behavior of the submit
+        e.preventDefault();
+        if (title.length < 2 || description.length < 2 || price < 1) {
+            setErrorMessage('Your form has some unsolved issues!')
+        }
+        else {
+
+            axios.post('http://localhost:8000/products', {
+                title,    // this is shortcut syntax,
+                description,
+                price,
+                
+            })
+                .then(res => {
+                    console.log(res); // always console log to get used to tracking your data!
+                    console.log(res.data);
+                    setTitle("");
+                    setDescription("");
+                    setPrice(0)
+                    navigate('/products')
+
+                   
+                })
+                .catch(err => {
+                    setErrorMessage("Your api has some problems!")
+                    console.log(err)
+                })
+
+
+        }
+    }
+
+    return (
+        <div className=" form  px-3">
+            <p className="text-decoration-none text-start" onClick={navigateBack}> &larr; </p>
+            <h1 className="text-center p-2">Create a Product</h1>
+            {
+                errorMessage ?
+                    <p className="text-danger text-center">{errorMessage}</p> :
+                    null
+            }
+
+            <form className="w-50 m-auto" onSubmit={(e) =>CreateProduct(e)}>
+
+                <div >
+                    <label  className="form-label">Title</label>
+                    <input className="form-control" type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+                </div>
+                {title.length > 0 && title.length < 3 ?
+                    <p className="text-danger">The Title should be 2 characters or more</p> :
+                    null
+                }
+
+
+                <div>
+                    <label  className="form-label"> Price:</label>
+                    <input className="form-control" type="number" value={price}  onChange={(e)=> setPrice(e.target.value)} />
+                </div>
+                {price <= 0 ?
+                    <p className="text-danger">The Price is required</p> :
+                    null
+                }
+
+                <div>
+                    <label className="form-label">Description: </label>
+                    <textarea className="form-control" name="text" id="" cols="30" rows="10" value={description} onChange={(e)=>setDescription(e.target.value)}></textarea>
+                </div>
+                {description.length > 0 && description.length < 3 ?
+                    <p className="text-danger">The Description is required</p> :
+                    null
+                }
+
+
+                <button className="btn btn-outline-success customColor mt-2">Create the Product</button>
+
+        
+             </form>
+
+        </div>
+    )
+}
+
+export default Product;
