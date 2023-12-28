@@ -44,8 +44,8 @@ return (
             )
         }):
         <div>
-            <h1>There are no products</h1>
-            <Link to="/create/product">Create a product</Link>
+            <h1 className="card">There are no products</h1>
+            <Link to="/create/product"> <button className="btn btn-outline-success customColor mt-2"> Create the product</button></Link>
         </div>
     }
 
