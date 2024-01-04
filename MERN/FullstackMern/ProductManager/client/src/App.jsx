@@ -13,7 +13,6 @@ import Details from './views/Details';
 
 
 function App() {
-  const [count, setCount] = useState("")
   return (
     <>
 
@@ -24,8 +23,6 @@ function App() {
           <Route path="/products" element={<Home />} />
           <Route path="/product/:id" element={<Details />} />
           <Route path="/product/edit/:id" element={<Update />} />
-
-
         </Routes>
       </BrowserRouter>
 

@@ -26,7 +26,7 @@ const DisplayOneProduct = (props) => {
 
 
 
-    const deleteProduct = (productId) => {
+    const deleteProduct = (id) => {
         axios.delete(`http://localhost:8000/product/${id}`)
             .then((res) => {
                 console.log(res)

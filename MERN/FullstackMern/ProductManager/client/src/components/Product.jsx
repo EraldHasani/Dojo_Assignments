@@ -8,7 +8,7 @@ const Product = (props) => {
     const navigate = useNavigate()
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
-    const [price, setPrice] = useState(0);
+    const [price, setPrice] = useState();
     const [errorMessage, setErrorMessage] = useState("");
     const navigateBack = () => {
         navigate('/products')
@@ -34,7 +34,7 @@ const Product = (props) => {
                     console.log(res.data);
                     setTitle("");
                     setDescription("");
-                    setPrice(0)
+                    setPrice()
                     navigate('/products')
 
                    
