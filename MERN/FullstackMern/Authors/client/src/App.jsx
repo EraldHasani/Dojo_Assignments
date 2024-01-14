@@ -5,7 +5,6 @@ import Form from './components/form';
 import Display from './components/Display';
 import DisplayOne from './components/DisplayOne';
 import Update from './components/Update';
-
 import './App.css'
 
 function App() {
@@ -15,6 +14,8 @@ function App() {
        
     <BrowserRouter>
     <Routes>
+    
+    <Route path="/" element={<Display/>}/>
 
     <Route path="/api/authors/new" element={<Form/>}/>
     <Route path="/api/authors" element={<Display/>}/>

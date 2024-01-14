@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import moment from "moment";
+
+
 
 
 
@@ -53,7 +56,7 @@ const Display = (props) => {
                     <thead>
                         <tr >
                             <th>Author</th>
-                            <th c>Actions Aviable</th>
+                            <th >Actions Aviable</th>
                            
                         </tr>
 
@@ -67,14 +70,13 @@ const Display = (props) => {
                                     return (
 
                                         <tr key={index}>
-                                            <td > {autor.name} </td>
+                                            <td> <Link to={`/api/author/${autor._id}`} >  {autor.name} </Link>  <br />
+                                                {moment(autor.createdAt).fromNow()} <br />
+                                             </td>
                                             
                                             <td > <button> <Link className="text-decoration-none" to={`/api/author/edit/${autor._id}`} > Edit</Link>  </button>
                                             <button className="ms-4" onClick={()=> deleteAuthor(autor._id)}>Delete</button>
                                             </td> 
-
-                                         
-                                       
                                         </tr>
 
                                     )
@@ -82,10 +84,9 @@ const Display = (props) => {
 
                                 <tr>
                                     <td>There are no authors yet</td>
-                                    <td>  <button ><Link  className=" text-decoration-none  " to="/api/authors/new">Create the first one </Link>
-</button>  </td>
+                                       <td>  <button ><Link  className=" text-decoration-none  " to="/api/authors/new">Create the first one </Link></button>  </td>
                                 </tr>
-                        }
+                       }
                     </tbody>
                 </table>
             </div>

@@ -10,6 +10,7 @@ const Update = (props) => {
     const [errorsMsg, setErrorsMsg] = useState("");
     const navigate = useNavigate();
     const [author, setAuthor] = useState({});
+    const [imageUrl, setImageUrl] = useState("");
     const { id } = useParams()
     const navigateBack=() =>{
         navigate("/api/authors")
@@ -41,12 +42,14 @@ const Update = (props) => {
         else {
             axios.put(`http://localhost:3000/api/author/edit/${id}`, {
                 name,
+                imageUrl
 
             })
                 .then(res => {
                     console.log(res);
                     console.log(res.data);
                     setName(res.data.author.name);
+                    setImageUrl(res.data.author.imageUrl);
                     navigate(-1)
                 })
                 .catch(err => {
@@ -86,6 +89,10 @@ const Update = (props) => {
                         null
                     }
                     <div className="m-auto">
+                        <div>
+                            <label className="form-label card-title my-2"> Image </label>
+                            <input className="form-control w-50 m-auto card-body border-success" type="text" onChange={(e) => setImageUrl(e.target.value)} placeholder={imageUrl} />
+                        </div>
                     <button  className="btn btn-outline-primary customColor  m-2"  type="cancel"  onClick={navigateBack}>Cancel</button>
 
                         <button className="btn btn-outline-primary customColor  m-2" type="submit">Submit</button>

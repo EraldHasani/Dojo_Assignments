@@ -8,6 +8,8 @@ const Form = () => {
     
     const [name, setName] = useState("");
     const [errorsMsg, setErrorsMsg] = useState("");
+    const [imageUrl, setImageUrl] = useState("");
+
     const navigate = useNavigate();
     const navigateBack=() =>{
         navigate(-1)
@@ -23,6 +25,8 @@ const Form = () => {
         else {
             axios.post('http://localhost:3000/api/authors/new', {
                  name,
+                 imageUrl,
+                
             })
             .then(res=> {
                 console.log(res);
@@ -63,6 +67,11 @@ const Form = () => {
                 <p className="text-danger"> The name should be at least 3 characters long</p> :
                  null
                 }
+            <div>
+            <label className="form-label card-title my-2"> Image </label>
+            <input className="form-control w-50 m-auto card-body"  type="text" value={imageUrl}   onChange={(e)=> setImageUrl(e.target.value)}/>
+            </div>
+
             <div className="m-auto">
             <button  className="btn btn-outline-primary customColor  m-2"   onClick={navigateBack}>Cancel</button>
             <button className="btn btn-outline-primary customColor  m-2"  type="submit">Submit</button>

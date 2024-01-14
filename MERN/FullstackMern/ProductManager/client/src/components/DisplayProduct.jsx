@@ -41,8 +41,7 @@ const DisplayProduct = (props) => {
                                 <div className=" card  d-flex justify-content-evenly" key={index}>
                                     <div className="card-body ">
                                         <h2 className="card-title">  <Link to={`/product/${produkt._id}`}>{produkt.title}</Link></h2>
-                                        {/* <p className="card-subtitle mb-2 text-muted">Price: ${produkt.price}</p>
-                    <p className="card-text"> Description: {produkt.description}</p> */}
+                                       
 
                                     </div>
 
